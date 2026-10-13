@@ -1,0 +1,14 @@
+/build/
+*.o
+*.elf
+*.bin
+*.img
+assets/rootfs/ffmpeg
+assets/rootfs/ffprobe
+
+# built desktop binaries (build artifacts)
+usermode/desktop/debian95-desktop
+usermode/desktop/debian95-desktop-sdl
+usermode/desktop/plugins/
+*.so
+__pycache__/

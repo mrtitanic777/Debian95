@@ -1,0 +1,4 @@
+debian95-desktop
+build.err
+*.o
+dist/

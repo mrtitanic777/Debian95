@@ -1,0 +1,17 @@
+# Keep shell scripts and assembler LF so the build works under bash/nasm.
+*.sh   text eol=lf
+*.asm  text eol=lf
+*.inc  text eol=lf
+*.ld   text eol=lf
+Makefile text eol=lf
+
+# Linux/Buildroot build files are parsed by make/busybox on Linux (from the
+# WSL /mnt/c working copy) - a stray CRLF breaks recipes and init scripts.
+*.mk         text eol=lf
+*.fragment   text eol=lf
+*_defconfig  text eol=lf
+Config.in    text eol=lf
+S[0-9]*      text eol=lf
+nftables.conf text eol=lf
+fstab        text eol=lf
+users        text eol=lf
